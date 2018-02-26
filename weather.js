@@ -8,7 +8,6 @@ let updateWidget = function(data) {
     document.getElementById("currentWeatherIcon").innerHTML = "http://openweathermap.org/img/w/" + currentWeatherIcon + ".png";
 
 };
-
       let getWeather = function(info) {
       console.log(info)
       window.myInfo = info
