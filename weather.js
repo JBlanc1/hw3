@@ -4,8 +4,8 @@ let updateWidget = function(data) {
     document.getElementById("card-text").innerHTML = "It is " + currentTemp + " degrees outside";
     let currentCity = data.name
     document.getElementById("card-title").innerHTML = currentCity;
-    let currentWeatherIcon = data.weather.icon
-    document.getElementById("currentWeatherIcon").innerHTML = "http://openweathermap.org/img/w/" + currentWeatherIcon + ".png";
+    let currentWeatherIcon = data.weather[0].icon
+    document.getElementById("currentWeatherIcon").src = "http://openweathermap.org/img/w/" + currentWeatherIcon + ".png";
 
 };
       let getWeather = function(info) {
